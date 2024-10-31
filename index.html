@@ -91,6 +91,23 @@
     <!-- Основное содержимое -->
     <div class="content">
         <h1>Добро пожаловать!</h1>
+        <p>На этой странице вы можете увидеть тестовую установку Яндекс.Метрики.</p>
+
+        <!-- Примеры целей -->
+        <h2>Тестовые цели</h2>
+        <p>Попробуйте выполнить действия ниже, чтобы проверить настройку целей:</p>
+        
+        <ul>
+            <li><a href="#target-page" onclick="ym(98775421, 'reachGoal', 'target-page-view'); return true;">Посетить целевую страницу</a></li>
+            <li><button onclick="ym(98775421, 'reachGoal', 'button-click'); alert('Цель достигнута: Клик по кнопке');">Клик по кнопке</button></li>
+            <li>
+                <form onsubmit="ym(98775421, 'reachGoal', 'form-submit'); alert('Цель достигнута: Отправка формы'); return false;">
+                    <label for="name">Введите имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    <button type="submit">Отправить</button>
+                </form>
+            </li>
+        </ul>
     </div>
 
     <!-- Подвал с информером -->
