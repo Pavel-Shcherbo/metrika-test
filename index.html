@@ -3,19 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тест Яндекс.Метрики на GitHub Pages</title>
+    <title>Пример страницы с Яндекс.Метрикой</title>
+    <style>
+        /* Основные стили для всей страницы */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        /* Стили для верхнего колонтитула */
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Основное содержимое страницы */
+        .content {
+            flex: 1;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .content h1 {
+            color: #4CAF50;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Стили для подвала */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Стили информера */
+        .ym-advanced-informer {
+            display: inline-block;
+            margin-top: 10px;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Тестовая страница Яндекс.Метрики</h1>
-    <p>Эта страница тестирует установку Яндекс.Метрики на GitHub Pages.</p>
+    <!-- Верхний колонтитул -->
+    <header>
+        Страница с Яндекс.Метрикой
+    </header>
 
-    <!-- Yandex.Metrika informer -->
-    <a href="https://metrika.yandex.ru/stat/?id=98775421&amp;from=informer" target="_blank" rel="nofollow">
-        <img src="https://metrika-informer.com/informer/98775421/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" 
-             alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" 
-             class="ym-advanced-informer" data-cid="98775421" data-lang="ru" />
-    </a>
-    <!-- /Yandex.Metrika informer -->
+    <!-- Основное содержимое -->
+    <div class="content">
+        <h1>Добро пожаловать!</h1>
+    </div>
+
+    <!-- Подвал с информером -->
+    <div class="footer">
+        <p>Статистика посещений:</p>
+        <!-- Yandex.Metrika informer -->
+        <a href="https://metrika.yandex.ru/stat/?id=98775421&amp;from=informer" target="_blank" rel="nofollow">
+            <img src="https://metrika-informer.com/informer/98775421/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" 
+                 alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" 
+                 class="ym-advanced-informer" data-cid="98775421" data-lang="ru" />
+        </a>
+        <!-- /Yandex.Metrika informer -->
+    </div>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
